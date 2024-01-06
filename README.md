@@ -1,5 +1,9 @@
 # Taskmanage
 
+## Objective
+
+The goal is to create a Digital Well-being Task Management System that empowers users to organize, prioritize, and accomplish tasks while fostering a balanced and fulfilling lifestyle. This system aims to integrate features that address the psychological and emotional aspects of productivity, helping users achieve their goals without compromising their mental and physical health.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Development server
