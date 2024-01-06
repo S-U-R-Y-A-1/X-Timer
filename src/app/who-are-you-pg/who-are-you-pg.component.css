@@ -1,0 +1,14 @@
+section .signin0 {
+    position: fixed;
+    width: 100%;
+    background: #222;  
+    z-index: 1000;
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,9);
+    text-align: center;
+    align-items: center;
+    top: 2%; /* Adjust this value to move it higher or lower */
+  
+  }

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body 
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+section 
+{
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,#0f0,#000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+section span:hover 
+{
+  background: #0f0;
+  transition: 0s;
+}
+
+section .signin {
+  position: fixed;
+  width: 95%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  top: 9%; /* Adjust this value to move it higher or lower */
+
+}
+section .signin1 {
+  position: fixed;
+  width: 95%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  height: 80%;
+  top: 27%; /* Adjust this value to move it higher or lower */
+
+}
+section .signin0 {
+  position: fixed;
+  width: 100%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  top: 2%; /* Adjust this value to move it higher or lower */
+
+}
+section .signin2 {
+  position: fixed;
+  width: 95%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  top: 40%; /* Adjust this value to move it higher or lower */
+
+}
+section .signin3 {
+  position: fixed;
+  width: 95%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  height: 20%;
+  top: 54%; /* Adjust this value to move it higher or lower */
+
+}
+.img{
+  width: 500px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  margin-left: 10%;
+}
+.img1{
+  width: 500px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  margin-left: 22%;
+  transition: transform 0.3s ease;
+}
+.img:hover{
+  transform: scale(1.1);
+}
+.img1:hover{
+  transform: scale(1.1);
+}
+.new1{
+  top: 10%;
+}
+.vertical-line {
+  border-left: 7px solid rgb(249, 247, 247); /* Adjust color and thickness as needed */
+  height: 100%; /* Adjust height as needed */
+  margin: 0 20px;
+  margin-left: 15%; /* Adjust margin as needed to create space between image and line */
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-button {
+  width: 100%;
+  max-width: 100px; /* Adjust the max-width to make it smaller */
+  padding: 240px; /* Adjust the padding to control the button size */
+  font-size: 1.5rem; /* Adjust the font size to make it smaller */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: #000;
+  box-shadow: #222;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  left: 50%;
+  right: 5%;/* Adding a smooth transition effect */
+}
+
+.large-button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+}
+section .signin .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #0f0;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0f0;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}

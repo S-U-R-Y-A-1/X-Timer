@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<form [formGroup]="textForm" (ngSubmit)="onSubmit()">
+    <label for="textParagraph">Enter Text Paragraph:</label>
+    <textarea id="textParagraph" formControlName="textParagraph" rows="4" cols="50"></textarea>
+  
+    <br>
+  
+    <button type="submit">Submit</button>
+  </form>
