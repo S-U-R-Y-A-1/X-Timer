@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+section 
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,#0f0,#000);
+  animation: animate 5s linear infinite;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .signin0 {
+  position: fixed;
+  width: 100%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  top: 2%; /* Adjust this value to move it higher or lower */
+
+}
+.large-button {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  margin-left: 19%;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: #663737;
+  box-shadow: #b65555;
+  transition: transform 0.3s ease; /* Adding a smooth transition effect */
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+section span:hover 
+{
+  background: #0f0;
+  transition: 0s;
+}
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+section .signin
+{
+  position: absolute;
+  width: 800%;
+  background: #222;  
+  z-index: 1000;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding: 60px;
+  border-radius: 4px;
+  top:12%;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* Add other styling properties as needed */
+}
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #0f0;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0f0;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
+  color: #0f0;
+  text-transform: uppercase;
+  cursor: default;
+  background-color: #222;
+}
+
+
+#leaderboard {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+table {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #0f0;
+  cursor: default;
+  margin-left: 15%;
+  background-color: #222;
+}
+
+tr {
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.2rem;
+}
+
+th{
+  font-size: 2.5rem;
+  margin-left: 45%;
+}
+th1{
+  font-size: 1.5rem;
+  margin-left: 45%;
+}
+.img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.img figcaption{
+  position:fixed;
+  top: 50%;
+  bottom: 50%;
+  left: 40%;
+  }
+.content-container {
+  background-color: rgba(249, 229, 229, 0.5); /* Add a semi-transparent background color to the container */
+  padding: 20px; /* Adjust the padding as needed */
+  border-radius: 10px; /* Optional: Add rounded corners to the container */
+  margin-right:60% ;
+}
+
+.content {
+  text-align: center;
+}
+section .signin1 {
+  position: fixed;
+  width: 95%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  text-align: center;
+  align-items: center;
+  height: 80%;
+  top: 22%; /* Adjust this value to move it higher or lower */
+
+}
+td {
+  height: 5rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  position: relative;
+  transition: transform 0.3s ease; /* Adding a smooth transition effect */
+  background-color: #222;
+
+}
+td:hover{
+  transform: scale(1.1); /* Scale the button on hover */
+}
+.numberc {
+  width: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align:center;
+}
+
+.namec {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.points {
+  width: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align:center;
+}
+.points:hover{
+  transform: scale(0.3);
+}
+
+
